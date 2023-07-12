@@ -1,13 +1,18 @@
 # UBL-Invoice
 
-A modern object-oriented PHP library to create valid UBL files. Please feel free to [contribute](https://github.com/num-num/ubl-invoice/pulls) if you are missing features or tags.
+A fork of the unmaintained [UBL-Invoice](https://github.com/num-num/ubl-invoice) package.  
+Added support for Chorus Pro as well as fixed some UBL issues.
+
+———
+
+UBL-Invoice: A modern object-oriented PHP library to create valid UBL files. Please feel free to [contribute](https://github.com/bluerocktel/ubl-invoice/pulls) if you are missing features or tags.
 
 ## Installation and usage
 
 This package requires PHP 7.4 or higher. Installation can be done through [composer](https://www.getcomposer.org).
 
 ```sh
-$ composer require num-num/ubl-invoice
+$ composer require bluerocktel/ubl-invoice
 ```
 
 ## Contributing

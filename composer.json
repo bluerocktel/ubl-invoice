@@ -1,5 +1,5 @@
 {
-    "name": "num-num/ubl-invoice",
+    "name": "bluerocktel/ubl-invoice",
     "description": "A modern object-oriented PHP library to create valid UBL files",
     "keywords": [
         "ubl",
@@ -12,13 +12,19 @@
         "xml",
         "xml invoice"
     ],
-    "homepage": "https://github.com/num-num/ubl-invoice",
+    "homepage": "https://github.com/bluerocktel/ubl-invoice",
     "license": "MIT",
     "authors": [
         {
             "name": "Bert Devriese",
             "email": "bert@numnum.be",
             "homepage": "https://www.numnum.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Thomas Georgel",
+            "email": "thomas@bluerocktel.com",
+            "homepage": "https://bluerocktel.com",
             "role": "Developer"
         }
     ],
