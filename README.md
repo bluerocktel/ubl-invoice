@@ -12,7 +12,7 @@ A modern object-oriented PHP library to create valid UBL and Peppol BIS 3.0 file
 This package requires PHP 7.4 or higher and is fully compatible with PHP8. Installation can be done through [composer](https://www.getcomposer.org).
 
 ```zsh
-$ composer require num-num/ubl-invoice
+$ composer require bluerocktel/ubl-invoice
 ```
 
 ## Contributing
