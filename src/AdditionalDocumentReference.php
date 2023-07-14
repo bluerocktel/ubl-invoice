@@ -70,6 +70,24 @@ class AdditionalDocumentReference implements XmlSerializable
     /**
      * @return string
      */
+    public function getDocumentTypeCode(): ?string
+    {
+        return $this->documentTypeCode;
+    }
+
+    /**
+     * @param string $documentTypeCode
+     * @return AdditionalDocumentReference
+     */
+    public function setDocumentTypeCode(string $documentTypeCode): AdditionalDocumentReference
+    {
+        $this->documentTypeCode = $documentTypeCode;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
     public function getDocumentDescription(): ?string
     {
         return $this->documentDescription;
@@ -113,13 +131,15 @@ class AdditionalDocumentReference implements XmlSerializable
     {
         $writer->write([ Schema::CBC . 'ID' => $this->id ]);
 
-        if ($this->documentTypeCode !== null) {
-            $writer->write([
-                Schema::CBC . 'DocumentTypeCode' => $this->documentTypeCode
-            ]);
-        } else if ($this->documentType !== null) {
+        if ($this->documentType !== null) {
             $writer->write([
                 Schema::CBC . 'DocumentType' => $this->documentType
+            ]);
+        }
+
+        if ($this->documentTypeCode !== null) {
+            $writer->write([
+                Schema::CAC . 'DocumentTypeCode' => $this->documentTypeCode
             ]);
         }
 
