@@ -50,24 +50,6 @@ class AdditionalDocumentReference implements XmlSerializable
     }
 
     /**
-     * @return int
-     */
-    public function getDocumentTypeCode(): ?int
-    {
-        return $this->documentTypeCode;
-    }
-
-    /**
-     * @param int $documentTypeCode
-     * @return AdditionalDocumentReference
-     */
-    public function setDocumentTypeCode(int $documentTypeCode): AdditionalDocumentReference
-    {
-        $this->documentTypeCode = $documentTypeCode;
-        return $this;
-    }
-
-    /**
      * @return string
      */
     public function getDocumentTypeCode(): ?string
